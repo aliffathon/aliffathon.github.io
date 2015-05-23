@@ -2,22 +2,41 @@
 
 *Hello*
 _Hallo_
-__Hoora__
-**Haaru**
+ini baris Bold (1) __Hoora__ ini juga Bold (2) **Haaru**
 
-	haru tora no baka
-carane 
-piyer jal ?
+	Kebodohan seseorang itu tidak akan ada habis nya
+    habis nya tiap orang itu bodoh sii >_< X_X
+
+ini baris code java
 ````java
-Class Hello{
+class Hello{
 	public static void main(String[] args){
     	System.out.println("Hello Hoora!");
     }
 }
 ````
+yang ini code php
+````php
+<?php
+echo "<html><head>Judul Halaman</head>";
+echo "<body>Isi Halaman</body></html>";
+?>
+````
+kalo ini code c/cpp
+````cpp
+#include <stdio.h>
+#include <header/local.h>
 
+void main(){
+	char[] nama;
+    nama << cin;
+    cout >> "Ini adalah tampilan dari " >> nama;    
+}
+````
 
 ![GambarKirito](./images/kirito-chibi-01.png)
+[Google](www.google.com)
+[Top](Pengenalan)
 
 + Daftar 
 + Dafter Kedua
