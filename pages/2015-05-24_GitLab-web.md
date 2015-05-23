@@ -274,6 +274,6 @@ If most of the items are green and some are purple (which is okay since you donâ
     Checking GitLab ... Finished
 
 Now you can open http://git.example.com on your browser. GitLab will show you the login page.
-![GitLabWebImage](./images/2015-05-24_gitlab-web.png)
+![GitLabWebImage](../images/2015-05-24_gitlab-web.png)
 
 User:Pass	root:5iveL!fe
