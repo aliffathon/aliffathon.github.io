@@ -6,6 +6,7 @@ author: aliffathon
 ## Bagian 1 : CDN dan Local Lib ##
 ```html
 <script type="text/javascript" src="lib/Angular/angular.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.1/angular.js"></script>
 ```
 
 ## Bagian 2 : Simple ng-app ##
