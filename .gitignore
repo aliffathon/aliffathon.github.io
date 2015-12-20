@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 _site
 .sass-cache
 .DS_Store
@@ -6,3 +7,6 @@ _site
 codekit-config.json
 node_modules
 _asset_bundler_cache
+=======
+/.project
+>>>>>>> 2966c34bae3a820e71e0f5178463949a8c68e5d5
