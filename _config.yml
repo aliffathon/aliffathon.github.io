@@ -1,8 +1,8 @@
 # Site wide configuration
 
-title:            Site Title
+title:            Hidup adalah Pembelajaran
 locale:           en_US
-url:
+url:              http://aliffathon.github.io
 
 
 # Jekyll configuration
@@ -26,21 +26,21 @@ kramdown:
 
 # Site owner
 owner:
-  name: Your Name
+  name: AlifFathon
   avatar: bio-photo.jpg
-  bio: "Describe your self."
-  email:
+  bio: "Student: belajar dari segala hal yang ku temui"
+  email: aliffathon.cvblast@gmail.com
   disqus-shortname:
-  twitter: #username
-  facebook: #username
+  twitter: #aliffathonblast
+  facebook: #aliffathon.cvblast
   google:
-    plus: #username
+    plus: #aliffathonblast
     analytics:
     verify:
     ad-client:
     ad-slot:
   bing-verify:
-  github: #username
+  github: #aliffathon
   stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
   linkedin: #username
   xing: #username
