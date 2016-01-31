@@ -3,10 +3,20 @@ gems: [jekyll-paginate]
 paginate: 5 # pagination based on number of posts
 paginate_path: "page:num"
 exclude: ["README.md"] # files to exclude
-highlighter: rogue # pygments
+
+# markdown interpreter and highlighter
+highlighter: pygments
+
 markdown: redcarpet # kramdown
+
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "strikethrough", "superscript", "with_toc_data"]
+
 disqus: #dbyll
 google_analytics: #dbyll
+
+excerpt_link:   "Read on &rarr;"
+excerpt_separator: "<!--more-->"
 
 defaults:
   -
