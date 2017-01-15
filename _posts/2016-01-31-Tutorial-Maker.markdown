@@ -34,26 +34,26 @@ Membuat RESTful Client API menggunakan AngularJS Framework
 
 [ ### NEXT ### ]
 
-RESTful Server API versi CodeIgniter
-RESTful Server API versi Java + Spring
-RESTful Server API versi Object PHP - PDO
-RESTful Client API versi jQuery dan BootStrap
-RESTful Client API dengan AngularJS dan BootStrap
-RESTful Client API - Chrome dengan Advance RESTful Client Application
-RESTful Client API - Firefox dengan RESTful Client
+- RESTful Server API versi CodeIgniter
+- RESTful Server API versi Java + Spring
+- RESTful Server API versi Object PHP - PDO
+- RESTful Client API versi jQuery dan BootStrap
+- RESTful Client API dengan AngularJS dan BootStrap
+- RESTful Client API - Chrome dengan Advance RESTful Client Application
+- RESTful Client API - Firefox dengan RESTful Client
 
-Slim FrameWork + Twig Template (Slim/Extras)
-Slim FrameWork + NotORM (DatabasePlugins)
+- Slim FrameWork + Twig Template (Slim/Extras)
+- Slim FrameWork + NotORM (DatabasePlugins)
 
-Route dan View dengan AngularJS
-Service, Factory dengan AngularJS
-Angular-UI-Router
-Angular-UI-BootStrap
-Angular-DataTable-Sederhana
+- Route dan View dengan AngularJS
+- Service, Factory dengan AngularJS
+- Angular-UI-Router
+- Angular-UI-BootStrap
+- Angular-DataTable-Sederhana
 
-Route dengan CodeIgniter [API]
-HarviaCode CRUD Generator + AdminLTE(BootStrap) + DataTable(jQuery)
-CodeIgniter + BootStrap [Template]
+- Route dengan CodeIgniter [API]
+- HarviaCode CRUD Generator + AdminLTE(BootStrap) + DataTable(jQuery)
+- CodeIgniter + BootStrap [Template]
 
 [ ### NEXT ### ]
 
@@ -72,16 +72,16 @@ Management HR:
 
 [ ### LINUX WORLD ### ]
 
-LinuxOnAndroid : CHRoot on ARM Linux (mediatek)
-LinuxOnAndroid : CHRoot on x86 Linux (intel)
-DebiAnDroid: DebootStrap & Setup
-DebiAnDroid: LAMPP Server
-DebiAnDroid: Jekyll
-DebiAnDroid: Java JRE/JDK
+- LinuxOnAndroid : CHRoot on ARM Linux (mediatek)
+- LinuxOnAndroid : CHRoot on x86 Linux (intel)
+- DebiAnDroid: DebootStrap & Setup
+- DebiAnDroid: LAMPP Server
+- DebiAnDroid: Jekyll
+- DebiAnDroid: Java JRE/JDK
 
-WindowsOnDroid: x86-emulated armhf-based linux-qemu (Windows XP2 ? IDM)
+- WindowsOnDroid: x86-emulated armhf-based linux-qemu (Windows XP2 ? IDM)
 
-USB OTG Y Cable : Power-Charge + Data-Cable-Multiple-Port (HDD, Keyboard, Mouse)
+- USB OTG Y Cable : Power-Charge + Data-Cable-Multiple-Port (HDD, Keyboard, Mouse)
 
 [ ### LINUX WORLD ### ]
 
@@ -89,8 +89,8 @@ USB OTG Y Cable : Power-Charge + Data-Cable-Multiple-Port (HDD, Keyboard, Mouse)
 
 [ ### NETWORK ### ]
 
-Cisco Packet Tracer 6 : Cisco IOS R/S, Cisco Firewall AXA,
-GNS 3 Emulator : MikroTik ROS, Cisco IOS/AXA, JuniperOS
-Media Transmitted : Fiber Optic(FO), WireLess (WPA), Wired(U/STP)
+- Cisco Packet Tracer 6 : Cisco IOS R/S, Cisco Firewall AXA,
+- GNS 3 Emulator : MikroTik ROS, Cisco IOS/AXA, JuniperOS
+- Media Transmitted : Fiber Optic(FO), WireLess (WPA), Wired(U/STP)
 
 [ ### NETWORK ### ]
