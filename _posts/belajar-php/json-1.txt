@@ -1,0 +1,21 @@
+sumber : http://www.candra.web.id/tutorial-json-php-mysql/
+
+## json_encode ##
+
+```
+$arr = array();
+while ($row = mysql_fetch_assoc($result)) {
+    $temp = array(
+  "eventID" => $row["eventID"],
+    "judul" => $row["judul"],
+    "tanggal" => $row["tanggal"], 
+    "jam" => $row["jam"], 
+    "lokasi" => $row["lokasi"]);
+   
+    array_push($arr, $temp);
+}
+ 
+$data = json_encode($arr);
+ 
+echo "{\"list_event\":" . $data . "}";
+```
