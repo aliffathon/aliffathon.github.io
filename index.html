@@ -5,8 +5,6 @@ tagline:
 
 {% for post in paginator.posts %}
 
-<article class="home">
-
   <h4>
     <a href="{{ site.BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
 	<small class="post-date">
@@ -21,7 +19,6 @@ tagline:
 		{{ post.date | date: "%Y" }}
 	</small>
   </h4>
-</article>
 {% endfor %}
 <hr/>
 

@@ -1,6 +1,6 @@
 # visit https://github.com/mojombo/jekyll/wiki/Configuration for more settings
 gems: [jekyll-paginate]
-paginate: 5 # pagination based on number of posts
+paginate: 10 # pagination based on number of posts
 paginate_path: "page:num"
 exclude: ["README.md"] # files to exclude
 
@@ -17,25 +17,26 @@ google_analytics: #dbyll
 
 excerpt_link:   "Read on &rarr;"
 excerpt_separator: "<!--more-->"
+permalink: none
 
 defaults:
   -
     scope:
       path: "" # empty string for all files
     values:
-      title: "alif fathon - langkah kecil ku" # dbyll
+      title: "3 Keajaiban Hidup"
 
 description: Stylish Jekyll Theme
 author:
-  name: "alif fathon" #dbyll
-  email: "fathon.1994@gmail.com" #dbyll@ismaildemirbilek.com
-  github: "aliffathon" # dbtek
-  twitter: #dbtek
-  pinterest: #asd123
-  linkedin: #asd123
-  bio: "Sebuah Perjalanan dimulai dari -Satu Langkah Kecil-" #Your stylish, minimalist theme!
+  name: "fathon"
+  email: "fathon.1994@gmail.com"
+  github: "aliffathon"
+  twitter: ""
+  pinterest: ""
+  linkedin: ""
+  bio: "Sebuah Perjalanan dimulai dari -Satu Langkah Kecil-"
   description: "Hidup adalah sebuah perjalanan Panjang, hanya -Langkah Kaki- kita yang dapat membawa kita menuju -Akhir-"
-  email_md5: c703914cdca7dca8bae568588ee2eb75 # 726351295ec82e145928582f595aa3aa
+  email_md5: c703914cdca7dca8bae568588ee2eb75
 
 rss_path: feed.xml
 categories_path: categories.html
