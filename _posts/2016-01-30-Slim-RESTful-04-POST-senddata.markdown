@@ -1,7 +1,8 @@
 ---
 layout: post
-title: Slim - RESTful API Bagian 4
-categories: slim
+title: Slim - RESTful API - POST send data
+categories: slim-restful
+permalink: /slim-restful/04-POST/
 tags: [slim, restful, api]
 date: 2016-01-31 7:53PM
 description: RESTful API Server - Slim Framework Tutorial Series
