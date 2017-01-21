@@ -1,10 +1,11 @@
 ---
 layout: post
-title: Slim - RESTful API
-categories: slim
-tags: [slim, restful, api]
+title: Content to Fill Up
+categories: content
+permalink: /content/
+tags: content
 date: 2016-01-31 6:48PM
-description: RESTful API Server - Slim Framework Tutorial Series
+description: Content to Filling up my blog notes
 ---
 
 [ ### DONE ### ]

@@ -1,7 +1,8 @@
 ---
 layout: post
-title: AngularJS - RESTful API Client Bagian 1
-categories: angular
+title: AngularJS - RESTful API - Membuat Halaman Aplikasi
+categories: angular-restful
+permalink: /angular-restful/01-Membuat-AppAJS/
 tags: [angular, restful, api]
 date: 2016-01-31 8:30PM
 description: RESTful API Client - AngularJS JavaScript Framework Tutorial Series

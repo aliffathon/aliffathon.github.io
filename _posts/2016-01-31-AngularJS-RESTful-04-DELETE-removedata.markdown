@@ -1,7 +1,8 @@
 ---
 layout: post
-title: AngularJS - RESTful API Client Bagian 4
-categories: angular
+title: AngularJS - RESTful - DELETE remove data
+categories: angular-restful
+permalink: /angular-restful/04-DELETE/
 tags: [angular, restful, api]
 date: 2016-01-31 9:30PM
 description: RESTful API Client - AngularJS JavaScript Framework Tutorial Series

@@ -1,7 +1,8 @@
 ---
 layout: post
-title: AngularJS - RESTful API Client Bagian 5
-categories: angular
+title: AngularJS - RESTful - PUT update data
+categories: angular-restful
+permalink: /angular-restful/05-PUT/
 tags: [angular, restful, api]
 date: 2016-01-31 9:30PM
 description: RESTful API Client - AngularJS JavaScript Framework Tutorial Series

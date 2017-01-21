@@ -1,7 +1,8 @@
 ---
 layout: post
-title: AngularJS - RESTful API Client Bagian 3
-categories: angular
+title: AngularJS - RESTful - POST send data
+categories: angular-restful
+permalink: /angular-restful/03-POST/
 tags: [angular, restful, api]
 date: 2016-01-31 8:30PM
 description: RESTful API Client - AngularJS JavaScript Framework Tutorial Series

@@ -1,7 +1,8 @@
 ---
 layout: post
-title: AngularJS - RESTful API Client Bagian 2
-categories: angular
+title: AngularJS - RESTful - GET pull data
+categories: angular-restful
+permalink: /angular-restful/02-GET/
 tags: [angular, restful, api]
 date: 2016-01-31 8:30PM
 description: RESTful API Client - AngularJS JavaScript Framework Tutorial Series
