@@ -5,11 +5,12 @@ paginate_path: "page:num"
 exclude: ["README.md"] # files to exclude
 
 # markdown interpreter and highlighter
-highlighter: pygments
+highlighter: rouge # pygments
 
-markdown: redcarpet # kramdown
+markdown: kramdown # redcarpet 
 
-redcarpet:
+#redcarpet:
+kramdown:
   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "strikethrough", "superscript", "with_toc_data"]
 
 disqus: #dbyll
