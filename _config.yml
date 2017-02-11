@@ -43,3 +43,5 @@ categories_path: categories.html
 tags_path: tags.html
 
 BASE_PATH:
+host: 0.0.0.0
+port: 80
