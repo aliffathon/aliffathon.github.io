@@ -97,5 +97,33 @@ echo "NIK: ".$arr[0];
 echo "Tanggal: ".$arr['tgl'];
 ```
 5. Update data dengan pg_query()
+
 ```php
+<?php
+$sql = "UPDATE users SET name='Alexis', age='34' WHERE name='Alex'";
+$upd = pg_query($sql);
+if(@$upd) 	{ echo pg_last_error($db); }
+	else	{ echo "Update data berhasil"; }
+?>
 ```
+
+6. Delete Data
+6.1 Menggunakan pg_delete();
+
+```php
+<?php
+$where = array( "name" => "Alexis" );
+$del = pg_delete($db, 'users', $where);
+if(!$del)	{ echo pg_last_error(); }
+	else	{ echo "Data berhasil di hapus"; }
+?>
+```
+
+6.2 Menggunakan pg_query()
+
+```php
+<?php
+$sql = "DELETE FROM users WHERE name='alexis'";
+?>
+```
+
