@@ -1,11 +1,3 @@
-@import url(//fonts.googleapis.com/css?family=Ubuntu:500&subset=latin,latin-ext);
-
-body{
-	color: #2c3e50;
-}
-
-
-
 #nav-menu{
     position: fixed;
     top: 45px;
@@ -20,4 +12,3 @@ body{
 ul.dropdown-menu>li>a>i.fa {
     width: 1.3em;
 }
-
