@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!-- source : http://www.nyekrip.com/cara-membuat-template-web-responsive-html-5/ -->
+<html lang="en">
+<head>
+	{% include shead.html %}
+</head>
+
+<body id="home">
+	<div id="wrapper">
+		
+		{% include sheader.html %}
+				
+		<section id="main-content">
+			
+			{% include sfeatured.html %}
+			
+			<hr/>
+			<div id="latest">
+
+				{% include scontentlist.html %}
+
+				{% include ssidebar.html %}
+				
+			</div> <!-- END Latest -->
+			{% include sabout.html %}
+		</section>	
+
+		{% include sfooter.html %}
+		
+	</div> <!-- END Wrapper -->
+	
+</body>
+</html> 

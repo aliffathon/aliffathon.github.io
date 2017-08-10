@@ -1,0 +1,126 @@
+/*
+Author : http://www.nyekrip.com
+*/
+/* Style Struktur*/
+body {
+    background: #F9F9F9;
+    color: #222;
+    font-family: 'Droid Serif', serif;
+    font-size: 16px;
+}
+#wrapper {
+    margin: 10px auto;
+    max-width: 980px;
+    width: 90%;
+    background: #fff;
+    padding: 10px 0;
+}
+/* Style Utama*/
+header {
+    padding: 3px;
+}
+::-moz-selection {
+    background-color: #91D8f7;
+    color: #fff;
+}
+::selection {
+    background-color: #91D8f7;
+    color: #fff;
+}
+a {
+    outline: 0;
+    color: #222;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+p a:hover {
+    color: #53bd84;
+}
+a:active {
+    outline: 0;
+    position: relative;
+    top: 2px;
+}
+.clearfix {
+    clear: both;
+}
+h1 {
+    font-size: 89px;
+    font-family: 'Open Sans', serif;
+    line-height: 75px;
+    padding: 10px;
+}
+h1 a:hover {
+    text-decoration: none;
+    color: #53bd84;
+}
+h2 {
+    font-family: Helvetica;
+    font-size: 18px;
+    padding: 10px;
+}
+h3 {
+    font-family: 'Droid Serif', serif;
+    font-size: 30px;
+}
+h4 {
+    font-family: 'Droid Serif', serif;
+    padding: 3px;
+    margin: 5px 0 0;
+}
+h4 a {
+    text-decoration: underline;
+}
+nav {
+    background: #222;
+    padding: 0;
+    margin: 10px 0;
+}
+nav a {
+    color: #F9F9F9;
+    display: block;
+    float: left;
+    padding: 10px;
+}
+nav a:visited {
+    color: #f9f9f9;
+}
+nav a:hover {
+    text-decoration: none;
+    background: #53bd84;
+}
+nav a:active {
+    position: relative;
+    top: 0;
+}
+.left-col {
+    width: 70%;
+    float: left;
+}
+.sidebar {
+    width: 20%;
+    float: right;
+    margin-bottom: 10px;
+}
+#about, #featured, #latest {
+    padding: 20px;
+}
+p {
+    padding: 0 5px;
+}
+ul {
+    list-style: none;
+}
+ul li {
+    margin: 0 5px;
+}
+footer {
+    padding: 5px;
+}
+pre {
+    overflow: scroll;
+    font-size: 10px;
+}
+
