@@ -1,6 +1,3 @@
----
-layout: nil
----
 <!DOCTYPE html>
 <!-- source : http://www.nyekrip.com/cara-membuat-template-web-responsive-html-5/ -->
 <html lang="en">
@@ -12,7 +9,11 @@ layout: nil
 	<div id="wrapper">
 		
 		{% include sheader.html %}
-				
+		
+		<div>
+		{{ content }}
+		</div>
+		
 		<section id="main-content">
 			
 			{% include sfeatured.html %}
