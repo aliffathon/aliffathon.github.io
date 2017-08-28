@@ -6,6 +6,7 @@ body {
 
 #header {
 	/* width: 700px; */
+	position: relative;
 	background-color: blue;
 	border: 1px;		/* batas elemen; lebar; */
 	padding: 10px;
@@ -17,7 +18,9 @@ body {
 	
 #content {
 	/* width: 700px; */
-	position: relative;
+	position: relative;		/* position default: static; */
+	top: -20px;				/* override position relative-relative */
+	left: 20px;				/* top-20px naik 20px; left20px jarak dari kiri 20px */
 	background-color: green;
 	max-height: 100%;
 	border: 1px;
@@ -30,9 +33,10 @@ body {
 
 #navigasi {
 	/* float button dynamic menu */
-	position: relative;		/* position default: static; */
-	top: -20px;				/* override position relative-relative */
-	left: 20px;				/* top-20px naik 20px; left20px jarak dari kiri 20px */
+	position: fixed;	/* fix seperti relative; perlu top left right bottom */
+	top: 20px;			/* tidak tergantung viewport; selalu ditempat yang sama */
+	right: 20px;		/* top20px right20px jarak dari atas; kanan; */
+	width: 100px;		/* width100px lebar elemen, nantinya berbentuk button */
 	background-color: grey;
 	border: 1px;
 	padding: 10px;
@@ -44,6 +48,11 @@ body {
 
 #footer {
 	/* width: 700px; */
+	position: absolute; /* seperti fixed; tapi relative ke position lain */
+	top: 120px;			/* position[!static]; jika tidak, ikut document body */
+	right: 20px;		/* top right jadi acuan posisi */
+	width: 300px;
+	height: 200px;
 	background-color: red;
 	border: 1px;
 	padding: 10px;
