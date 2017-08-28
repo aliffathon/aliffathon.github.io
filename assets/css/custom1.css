@@ -1,0 +1,54 @@
+body {
+	margin: 0 auto;		/* jarak antar elemen */
+	padding: 0px;		/* jarak konten dengan elemen */
+	max-width: 700px;	/* batas lebar halaman */
+}
+
+#header {
+	/* width: 700px; */
+	background-color: blue;
+	border: 1px;		/* batas elemen; lebar; */
+	padding: 10px;
+	margin: 10px auto;
+  -webkit-box-sizing: border-box; /* mencegah perbedaan */
+     -moz-box-sizing: border-box; /* ukuran box */
+          box-sizing: border-box;
+}
+	
+#content {
+	/* width: 700px; */
+	position: relative;
+	background-color: green;
+	max-height: 100%;
+	border: 1px;
+	padding: 10px;
+	margin: 10px auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#navigasi {
+	/* float button dynamic menu */
+	position: relative;		/* position default: static; */
+	top: -20px;				/* override position relative-relative */
+	left: 20px;				/* top-20px naik 20px; left20px jarak dari kiri 20px */
+	background-color: grey;
+	border: 1px;
+	padding: 10px;
+	margin: 10px auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#footer {
+	/* width: 700px; */
+	background-color: red;
+	border: 1px;
+	padding: 10px;
+	margin: 10px auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
