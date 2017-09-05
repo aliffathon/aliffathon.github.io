@@ -1,9 +1,0 @@
----
-layout: post
-title:  "IndexTemplate"
-date:   2017-08-14 04:39:24 +0000
-categories: index1
-permalink: /home/index1/
----
-
-kontenindex1
