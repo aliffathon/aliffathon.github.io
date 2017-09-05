@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "IndexTemplate0"
+date:   2017-08-13 04:39:24 +0000
+categories: index0
+permalink: /home/index0/
+---
+
+kontenindex0
