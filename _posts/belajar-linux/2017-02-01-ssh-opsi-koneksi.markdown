@@ -1,10 +1,10 @@
 ---
-layout: post
-title:  "SSH :: Opsi Koneksi Client"
-date:   2017-02-01 08:39:24 +0000
+layout: 	post
+title:  	"SSH :: Opsi Koneksi Client"
+date:   	2017-02-01 08:39:24 +0000
 categories: linux-server
 tags:		ssh
-permalink:	linux-server/ssh/01/
+permalink:	linux-server/ssh-connection-option/
 ---
 
 Sering kali kita melakukan koneksi remote melalui protokol ssh ke

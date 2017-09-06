@@ -1,3 +1,12 @@
+---
+layout: 	post
+title:  	"Linux :: Raw Images Mount"
+date:   	2015-12-01 08:39:24 +0000
+categories: linux-server
+tags:		linux
+permalink:	linux-server/raw-image-mount/
+---
+
 # LINUX RAW IMAGES MOUNT #
 
 ## backup image dengan `dd`

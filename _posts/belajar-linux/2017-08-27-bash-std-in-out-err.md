@@ -1,9 +1,10 @@
 ---
-layout: post
-title: "Bash: StdIn[0], StdOut[1] & StdErr[2]"
-date: 2017-08-27 08:00:01
-categories: linux
-tags: bash
+layout: 	post
+title: 		"Bash: StdIn[0], StdOut[1] & StdErr[2]"
+date: 		2017-08-27 08:00:01
+categories: linux-server
+tags: 		bash
+permalink:	linux-server/bash-stdin-stdout-stderr/
 ---
 
 Note : 
