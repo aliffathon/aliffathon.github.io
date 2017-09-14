@@ -3,7 +3,7 @@ layout: post
 title: AngularJS - RESTful - PUT update data
 categories: angular-restful
 permalink: /angular-restful/05-PUT/
-tags: [angular, restful, api]
+tags: [angular]
 date: 2016-01-31 9:30PM
 description: RESTful API Client - AngularJS JavaScript Framework Tutorial Series
 ---
