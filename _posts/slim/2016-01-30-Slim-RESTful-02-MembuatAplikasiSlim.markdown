@@ -3,7 +3,7 @@ layout: post
 title: Slim - RESTful API - Membuat Aplikasi SLIM
 categories: slim-restful
 permalink: /slim-restful/02-CreateApp/
-tags: [slim, restful, api]
+tags: [slim]
 date: 2016-01-31 7:03PM
 description: RESTful API Server - Slim Framework Tutorial Series
 ---

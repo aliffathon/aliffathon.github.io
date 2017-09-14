@@ -3,7 +3,7 @@ layout: post
 title: Slim - RESTful API - Tips Trick
 categories: slim-restful
 permalink: /slim-restful/11-tips-trick/
-tags: [slim, restful, api, tshoot]
+tags: [slim]
 date: 2016-01-31 8:15PM
 description: RESTful API Server - Slim Framework Tutorial Series
 ---

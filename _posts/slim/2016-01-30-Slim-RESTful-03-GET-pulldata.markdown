@@ -3,7 +3,7 @@ layout: post
 title: Slim - RESTful API - GET pull data
 categories: slim-restful
 permalink: /slim-restful/03-GET/
-tags: [slim, restful, api]
+tags: [slim]
 date: 2016-01-31 7:27PM
 description: RESTful API Server - Slim Framework Tutorial Series
 ---

@@ -3,7 +3,7 @@ layout: post
 title: Slim - RESTful API - DELETE remove data
 categories: slim-restful
 permalink: /slim-restful/05-DELETE/
-tags: [slim, restful, api]
+tags: [slim]
 date: 2016-01-31 7:53PM
 description: RESTful API Server - Slim Framework Tutorial Series
 ---
