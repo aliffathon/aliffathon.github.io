@@ -1,0 +1,20 @@
+  <!-- nav-menu-dropdown -->
+  <div class="btn-group hidden-xs" id="nav-menu">
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+      <i class="glyphicon glyphicon-menu-hamburger"></i>
+    </button>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="{{ site.url | prepend: site.baseurl }}/">Home</a></li>
+      <li><a href="{{ site.url | prepend: site.baseurl }}/{{ site.categories_path }}">Categories</a></li>
+      <li><a href="{{ site.url | prepend: site.baseurl }}/{{ site.tags_path }}">Tags</a></li>
+      <li class="divider"></li>
+	{% for my_page in site.pages %}
+	  {% if my_page.title %}
+      <li><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
+	  {% endif %}
+	{% endfor %}
+	  <li class="divider"></li>
+      <li><a href="#">Top of Page</a></li>
+    </ul>
+  </div>
+  <!--default kanan-atas-->
