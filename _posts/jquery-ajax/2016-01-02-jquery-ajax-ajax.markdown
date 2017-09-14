@@ -4,7 +4,8 @@ title: AJAX dengan JQuery
 date: 2016-01-02 11:00 AM
 author: alif fathon
 categories: jquery
-tags: [javascript, jquery, ajax, json]
+tags: [jquery-ajax]
+permalink: /jquery-ajax/01-ajax/
 ---
 
 ## Buat Dokumen HTML Baru ##

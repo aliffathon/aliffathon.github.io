@@ -4,7 +4,8 @@ title: AJAX dengan JQuery method POST
 date: 2016-01-02 10:00 AM
 author: alif fathon
 categories: jquery
-tags: [javascript, jquery, ajax, json]
+tags: [jquery-ajax]
+permalink: /jquery-ajax/03-POST/
 ---
 
 ### AJAX dengan fungsi POST ###

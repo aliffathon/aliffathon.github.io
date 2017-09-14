@@ -4,7 +4,8 @@ title: AJAX dengan JQuery load
 date: 2016-01-02 7:00 AM
 author: alif fathon
 categories: jquery
-tags: [javascript, jquery, ajax, json]
+tags: [jquery-ajax]
+permalink: /jquery-ajax/04-LOAD/
 ---
 
 

@@ -4,7 +4,8 @@ title: AJAX dengan JQuery method GET
 date: 2016-01-02 9:00 AM
 author: alif fathon
 categories: jquery
-tags: [javascript, jquery, ajax, json]
+tags: [jquery-ajax]
+permalink: /jquery-ajax/02-GET/
 ---
 
 ### AJAX dengan fungsi GET ###
