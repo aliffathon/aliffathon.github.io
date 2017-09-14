@@ -1,11 +1,10 @@
 ---
 layout: post
-title: Content to Fill Up
-categories: content
-permalink: /content/
-tags: content
+title: Draft
+categories: draft
+tags: [draft]
 date: 2016-01-31 6:48PM
-description: Content to Filling up my blog notes
+description: DRAFT
 ---
 
 [ ### DONE ### ]
