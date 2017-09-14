@@ -1,10 +1,10 @@
 ---
 layout: post
-title: CRUD dengan PHP MySQL metode OOP dengan PDO
+title: "PHP-PDO : Create"
 date: 2016-01-03 8:00 AM
 author: alif fathon
 categories: php
-tags: [php, mysql, pdo, oop]
+tags: [php-pdo]
 ---
 
 ## Bagian 2 : Form dan Fungsi Insert User Baru ##
