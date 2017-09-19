@@ -5,15 +5,12 @@ tags: linux-server
 ---
 
 source:
-[0](https://www.debian.org/releases/jessie/amd64/apds03.html.en)
-
-[1](https://www.prahladyeri.com/blog/2016/02/minimal-debian-desktop-setup.html)
-[3](http://linuxforcynics.com/how-to/minimal-debian-install)
-[6](https://olimex.wordpress.com/2014/07/21/how-to-create-bare-minimum-debian-wheezy-rootfs-from-scratch/)
-[8](http://stray-notes.blogspot.co.id/2010/11/debian-minimal-install-xfce4.html)
-[10](https://gist.github.com/DazWorrall/4277257)
-
-[11](https://musaamin.web.id/cara-install-vagrant-di-ubuntu/)
+- [Minimal ChRoot](https://www.debian.org/releases/jessie/amd64/apds03.html.en)
+- [Minimal Desktop](https://www.prahladyeri.com/blog/2016/02/minimal-debian-desktop-setup.html)
+- [Sound and Wireless](http://linuxforcynics.com/how-to/minimal-debian-install)
+- [Rootfs for ARM Board](https://olimex.wordpress.com/2014/07/21/how-to-create-bare-minimum-debian-wheezy-rootfs-from-scratch/)
+- [Chroot Script](https://gist.github.com/DazWorrall/4277257)
+- [Vagrant](https://musaamin.web.id/cara-install-vagrant-di-ubuntu/)
 
 ----
 
@@ -322,6 +319,10 @@ nano rootfs/etc/hosts
 127.0.1.1 xenial
 ```
 
+```
+echo 'xenial' > rootfs/etc/hostname
+```
+
 - Mengatur repository
 
 ```
@@ -397,3 +398,29 @@ passwd
 apt-get install sudo
 adduser xenial sudo
 ```
+
+Sampai pada titik ini, ukuran image masih dikisaran 200MB~300MB,
+jika ingin melakukan upgrade, pastikan melakukan clean pada archive yang telah didownload pada proses upgrade tadi
+
+```
+apt-get update
+apt-get upgrade
+apt-get dist-upgrade
+apt-get clean
+```
+
+Beberapa paket yang sebaiknya anda install:
+- busybox : berisi tools minimal pada sistem linux
+- coreutils: berisi tools console lebih lengkap
+- iproute2 iproute iputils-ping isc-dhcp-client
+----
+
+Menginstall Desktop Minimalis
+
+```
+apt-get install network-manager
+apt-get install xserver-xorg-core openbox xdm
+apt-get install xbacklight pcmanfm lxappearance lxpanel gmrun gnome-terminal
+```
+
+Lalu tambahkan pada `~/.config/openbox/autostart` baris `lxpanel &` agar saat login, akan muncul panel sederhana di bawah.
