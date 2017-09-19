@@ -32,6 +32,165 @@ Membuat RESTful Client API menggunakan AngularJS Framework
 
 --------------------------------------------------------------------
 
+[ ### Bookmark ### ]
+- [nodejs-id](https://bertzzie.com/knowledge/serverside-nodejs/index.html)
+- [node-js-id](http://idjs.github.io/belajar-nodejs/)
+- [php-id-0](http://jagocoding.com/category/php_pure)
+- [logo](http://www.logodust.com/)
+- [duniailkom](http://www.duniailkom.com/tutorial-belajar-html-dan-index-artikel-html)
+- [1](http://www.duniailkom.com/tutorial-belajar-css-dan-index-artikel-css)
+- [2](http://www.duniailkom.com/tutorial-belajar-php-dan-index-artikel-php)
+- [3](http://www.duniailkom.com/tutorial-belajar-mysql-dan-index-artikel-mysql)
+- [4](http://www.duniailkom.com/tutorial-belajar-javascript-dan-index-artikel-javascript)
+- [5](http://www.duniailkom.com/tutorial-belajar-jquery-bagi-pemula)
+- [locked](https://www.codepolitan.com/interactive-coding/php)
+- [codeigniter-phpid](https://belajarphp.net/belajar-framework-codeigniter/)
+- [siakad](http://siakad.net/)
+
+[ ### Bookmark ### ]
+
+[ ### PHP ### ]
+- Login:
+  + Static, Tanpa Database
+  + Array, Dengan JSON
+  + Dengan Database
+  + Menyimpan Session
+  + Session Di Database
+  + Session di Local Storage Browser
+  + Session auto Expired
+  + [tambahan](#)
+- Menu
+  + Vertical/Sidebar Navigation Statis
+  + Vertical/Sidebar Dinamis dengan Database
+  + Vertical/Sidebar Dinamis dengan JSON
+  + Horizontal/TopMenu dengan Dropdown/Nested Statis
+  + Horizontal/TopMenu Dinamis dengan Database
+  + Horizontal/TopMenu Dinamis dengan JSON
+  + BottomMenu Ala Control Button pada SmartPhone
+- File dan Folder
+  + Upload File: Tunggal
+  + Upload File: Multi
+  + Gallery: Thumbnail: 200x200 400x400 Ori
+  + Konfigurasi dalam File Teks PHP Include
+- ORM : Object Relation Module
+  + Eloqueent Laravel
+  + ActiveRecord
+
+- Access Control List: ACL
+  + Pembuatan Pembatasan Hak Akses pada User dengan Multi Level
+
+- Pembukuan:
+  + Aplikasi Koperasi; Hutang Piutang(Tabungan)
+  + Aplikasi Perbankan
+  + Aplikasi Pergudangan
+  + Aplikasi Transaksi Penjualan Pembelian Toko
+  + Aplikasi Transaksi non Tunai (Sistem Saldo, Potong Saldo)
+  + Pembuatan Voucher Diskon; Perhitungan Diskon; dan UsagePoint
+  + Pendaftaran Multi Source/Destination (SistemBedaCabang)
+  + Customer: Data dan Topup, Usage, Point, Activity
+  + Pembukuan Aliran Kas, Buku Besar, Akunting
+  +
+
+
+- Native
+  + Template: Header Menu Content Footer 
+  + cURL: Content Grabbing
+  + PostMAN RESTful API Test
+  + JSON: Encode dan Decode
+  + Array dan Looping
+  + DateTime
+  + Flow Control
+  + Rp. Terbilang
+  + DateTime Terbilang: Senin-Minggu Januari-Desember
+
+
+- CRUD: Datatable
+  + Search AutoComplete/Like
+  + Pagination: onScroll ScrollBottom
+  + Sort/OrderBy
+  + LimitSelect PerPageData
+
+
+- Chart.js: Javascript
+  + Membuat Chart: Balok, Pie, Alir
+
+
+- MySQL:
+  + Trigger
+  + View
+  + Insert Cascade Update
+  + Foreign Key, Primary Key, Index Key, Unique Key & Constraint
+  + DateTime
+  + Select dan Sub-Select
+  + Join: Inner Outer Left Right
+  + Tabel Sementara
+  + Managemen User dan Administrasi Server
+  + Backup Restore: PhpMyAdmin cPanel Shell
+  + Android: HTML Hybrid App: Apache Cordova + AngularJS
+
+
+- Linux:
+  + Backup FullSystem sedang Berjalan (tar)
+  + Backup Disk Bit-per-Bit dengan DD
+  + Membuat FileSystem dengan DebootStrap
+  + Sinkronisasi dengan RSYNC
+  + Virtualisasi dengan Vagrant
+  + Virtualisasi dengan VirtualBox
+  + Virtualisasi dengan QEMU-KVM
+  + Script AutoStartUp Qemu dengan Interface tun/tap/bridge
+  + MikroTik CHR Cloud Hosted Router Lv6 Trial
+  + Scripting dengan Mikrotik
+  + Mikrotik BWTest
+  + Mikrotik Hotspot Voucher
+  + Mengetes Bandwidth dengan Iperf
+  + Mengetes Paket dengan Ping Fragment
+  + Monitoring Performa Server
+  + Traceroute: DestIp dan DestPort
+  + PortByPort: dengan NC NetCat
+  + PortScan dengan NMAP
+  + Administrasi Server dengan WEBMIN
+  + IpTables: Mangle, Filter dan NAT
+  + nGinX: Server Cluster, Reverse Proxy, dan SSL
+  + SSL dengan LetsEncrypt, script autoRenew
+  + Otomatisasi sistem dengan Script Bash
+  + Penjadwalan dengan CRON
+  + Server Printer dengan CUPS
+  + Server Shell Script dengan LighttpD
+  + Server SSH dengan Dropbear dan openssh-SFTP-server
+  + Sudo Tanpa Password pada Perintah Tertentu
+  + JailRoot pada user tertentu
+  + Kirim Email dari Localhost dengan SMTP Gmail [Linux](#) [XAMPP](#)
+  + Bot: PidGin Purple w eJabberD & Telegram
+  + SMS Gateway Server: Modem 3G USB, Modem A6 A7 GSM
+  + PI ARM Board: Arduino, UART, GPIO
+  + PI: FingerPrint Scanner
+  + PI: RFID Scanner
+  + PI: GSM SMS + DTMF Decoder
+  + PI: 5v Powerbank, 12v Powerbank
+  + PI: Server Pulsa Reguler, Pulsa Internet, Token PLN
+  + Email Server dengan Custom Domain
+
+
+
+[ ### Bootstrap ### ]
+
+- Scafolding: Bootstrap Non-Responsive
+  + WideScreen: Desktop Version
+  + SmallScreen: Mobile Version
+
+- CodeIgniter dengan Template Bootstrap
+- DataTable jQuery dengan Tema Bootstrap
+- CodeIgniter WebChat
+
+- Node: JavaScript di Server, jQuery: javascript di Client
+  + Server WebSocket: Komunikasi Dua Arah
+  + Aplikasi ToDo List
+  + Aplikasi Voting
+  + Simpan Lokal JSON sebelum Update/Send ke Server
+
+[ ### Bootstrap ### ]
+
+
 [ ### NEXT ### ]
 
 - RESTful Server API versi CodeIgniter
