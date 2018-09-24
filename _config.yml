@@ -1,11 +1,39 @@
 title: Tanpa Judul
 email: afatonii2016@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
+description: > # ignore newlines until "baseurl:"
   Catatan Penulis
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://alif.fathon.my.id"
+#baseurl: ""
+#url: "http://alif.fathon.my.id"
 twitter_username: aliffathon
 github_username:  aliffathon
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
+
+# exclude from generate
+exclude:
+- node_modules
+- gulpfile.js
+- package.json
+- package-lock.json
+
+# self service
+host: 127.0.0.1
+port: 4100
+
+# pagination
+gems: [jekyll-paginate]
+paginate: 5
+paginate_path: "page:num"
+
+# permalink
+permalink: /posts/:title/
+
+# excerpt
+excerpt_link: "Read on &rarr;"
+excerpt_separator: "<!--more-->"
+
+# categories & tags
+categories_path: "categories.html"
+tags_path: "tags.html"
