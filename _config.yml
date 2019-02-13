@@ -3,7 +3,7 @@ email: afatonii2016@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Catatan Penulis
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://alif.fathon.my.id"
+url: #"http://alif.fathon.my.id"
 twitter_username: aliffathon
 github_username:  aliffathon
 
