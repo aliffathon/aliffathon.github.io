@@ -2,8 +2,13 @@ title: Tanpa Judul
 email: afatonii2016@gmail.com
 description: > # ignore newlines until "baseurl:"
   Catatan Penulis
+<<<<<<< HEAD
 #baseurl: ""
 #url: "http://alif.fathon.my.id"
+=======
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" #"http://alif.fathon.my.id"
+>>>>>>> 0314342f3bce3cb60eefe13ba9bafd63876abb53
 twitter_username: aliffathon
 github_username:  aliffathon
 
