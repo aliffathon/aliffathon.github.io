@@ -2,19 +2,18 @@ title: Tanpa Judul
 email: afatonii2016@gmail.com
 description: > # ignore newlines until "baseurl:"
   Catatan Penulis
-<<<<<<< HEAD
-#baseurl: ""
-#url: "http://alif.fathon.my.id"
-=======
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" #"http://alif.fathon.my.id"
->>>>>>> 0314342f3bce3cb60eefe13ba9bafd63876abb53
+baseurl: ""
+url: "http://alif.fathon.my.id"
 twitter_username: aliffathon
 github_username:  aliffathon
 
 # Build settings
 markdown: kramdown
 highlighter: rouge
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 
 # exclude from generate
 exclude:
@@ -27,11 +26,6 @@ exclude:
 host: 127.0.0.1
 port: 4100
 
-# pagination
-gems: [jekyll-paginate]
-paginate: 5
-paginate_path: "page:num"
-
 # permalink
 permalink: /posts/:title/
 
@@ -42,3 +36,16 @@ excerpt_separator: "<!--more-->"
 # categories & tags
 categories_path: "categories.html"
 tags_path: "tags.html"
+
+permalink: /:title/
+
+author:
+  name: aliffathon
+  email: alif@fathon.my.id
+  url: https://www.fathon.my.id/
+
+plugins:
+ - jekyll-paginate
+
+paginate: 5
+paginate_path: "page:num"
