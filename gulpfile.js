@@ -35,15 +35,15 @@ gulp.task('browserSync', function() {
   })
 })
 
-gulp.task('watch', ['browserSync'], function (){
+gulp.task('watch', gulp.series('browserSync', function (){
   // Reloads the browser whenever HTML or JS files change
   gulp.watch('_site/**/*.html', browserSync.reload);
   gulp.watch('_site/**/*.js', browserSync.reload);
   gulp.watch('_site/**/*.css', browserSync.reload);
-});
+}));
 
-gulp.task('default', function (callback) {
+gulp.task('default', gulp.series('watch', function (callback) {
   runSequence(['browserSync', 'watch'],
     callback
   )
-})
+}))
