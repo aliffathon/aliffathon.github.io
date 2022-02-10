@@ -3,7 +3,7 @@ email: afatonii2016@gmail.com
 description: > # ignore newlines until "baseurl:"
   Catatan Penulis
 baseurl: ""
-url: "http://alif.fathon.my.id"
+url: #"http://alif.fathon.my.id"
 twitter_username: aliffathon
 github_username:  aliffathon
 
