@@ -2,6 +2,7 @@
 layout: page
 title: Archive
 permalink: /archive/
+intro: true
 ---
 
 <ul>

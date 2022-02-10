@@ -2,6 +2,7 @@
 layout: page
 title: Categories
 permalink: categories/
+intro: true
 ---
 
 
