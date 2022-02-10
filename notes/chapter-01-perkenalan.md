@@ -2,9 +2,9 @@
 layout:     post
 title:      Perkenalan
 date:       2022-02-10 11:45 +0800
-chapter:    catatan
+chapter:    notes
 urutan:     1
-permalink:  /:chapter/:title.html
+permalink:  /MyNotes/:title/
 ---
 
 
