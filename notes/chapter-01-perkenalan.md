@@ -4,6 +4,7 @@ title:      Perkenalan
 date:       2022-02-10 11:45 +0800
 chapter:    catatan
 urutan:     1
+permalink:  /:chapter/:title
 ---
 
 
