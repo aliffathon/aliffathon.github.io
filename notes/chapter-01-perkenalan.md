@@ -4,7 +4,7 @@ title:      Perkenalan
 date:       2022-02-10 11:45 +0800
 chapter:    notes
 urutan:     1
-permalink:  /MyNotes/:title/
+permalink:  /MyNotes/perkenalan/
 ---
 
 
