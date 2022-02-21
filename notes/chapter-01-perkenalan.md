@@ -105,6 +105,201 @@ services:
 - [restful api docs](https://documenter.getpostman.com/view/18988925/UVRHiNne)
 - [demo](https://youtu.be/T_xMvLKK4i4)
 
+## Docker Install via SNAP (Linux Mint)
+
+### Linux Mint: Enable Snap on APT
+
+```
+sudo rm /etc/apt/preferences.d/snap.conf
+sudo apt update && sudo apt install snapd
+```
+
+### install docker via snap
+
+```
+sudo snap info docker
+sudo snap install docker
+sudo snap list
+```
+
+add my current user to docker group
+
+```
+sudo addgroup --system docker
+sudo adduser $USER docker #or sudo usermod -a -G docker $USER
+# newgrp docker # change default $USER group to docker
+sudo snap disable docker
+sudo snap enable docker
+```
+
+[docker permission denied](https://askubuntu.com/questions/941816/permission-denied-when-running-docker-after-installing-it-as-a-snap)
+
+
+## ThunderBird delete default SMTP outgoing server
+
+ketika menambahkan akun email pada thunder bird, akan ada 1 akun outgoing yg tidak bisa dihapus, karena merupakan default outgoing account.
+
+solusinya, dengan membuat profile baru dan menjadikannya default, kemudian menghapus profile lama tadi.
+
+Preference -> Account Settings -> Delete Account (IMAP/POP)
+
+Help -> More Troubleshooting Information -> Application Basics: Profiles (about:profiles) -> Create New Profile (Set Default Profile). Remove Old Profile
+
+[solved-remove default outgoing smtp-thunderbird](https://support.mozilla.org/en-US/questions/1286050)
+
+## Alpine Linux - Install on UEFI System
+
+- create GPT Boot partition
+
+```
+apk add parted
+
+parted --script /dev/sda mklabel gpt
+parted --script --align=optimal /dev/sda mkpart ESP fat32 1MiB 100%
+parted --script /dev/sda set 1 boot on
+```
+
+- create Fat32 filesystem
+
+```
+mkfs.vfat -n ALPINE /dev/sda1
+```
+
+- copy iso image to filesystem
+
+```
+mount -t vfat /dev/sda1 /mnt
+cd /mnt
+uniso < /path/to/alpine-3.11.2-x86_64.iso
+```
+
+[install alpine linux on uefi system with secure boot enabled](https://wiki.alpinelinux.org/wiki/Create_UEFI_secureboot_USB)
+
+## DualBoot: Windows 10 + Linux Mint 20.3 XFCE (UEFI)
+
+### partition reordering after windows booting
+
+before install linux mint:
+
+[nvme0n1p1-esp]()
+[nvme0n1p2-windows 100mb]()
+[nvme0n1p3-windows recovery]()
+[nvme0n1p4-windows system c:]()
+[nvme0n1p?-shrinked from c: as free space]()
+[nvme0n1p5-windows data d:]()
+
+i create linux partition on free space & detected on installation as `nvme0n1p6`
+after install im successfully boot to linux mint.
+but after i reboot to windows, bad things happen.
+i cannt boot to linux mint, end up with `grub>` prompt.
+
+here's what happen:
+after booting to windows, it reordering the partition table, as my linux root / will be `nvme0n1p5` not `nvme0n1p6` anymore.
+that cause problem to my linux mint installation
+
+how i solve it?
+on `grub>` prompt, i try to normal boot to linux with:
+
+```
+grub> ls
+(hd0,gpt1) (hd0,gpt2) (hd0,gpt3) (hd0,gpt4) (hd0,gpt5) (hd0,gpt6)
+
+# find my root fs
+grub> set root=(hd0,gpt5)
+grub> ls /
+# content of my root fs
+grub> set prefix=(hd0,gpt5)/boot/efi
+grub> insmod normal
+grub> normal
+```
+
+[solved: dualboot windows 10 + linuxmint , grub rescue](https://askubuntu.com/questions/1256897/grub-problem-on-dual-boot-uefi-installation-boot-on-grub-console-boot-repair)
+
+then, reinstall grub
+
+```
+sudo apt update
+sudo apt install --reinstall grub-efi
+sudo efibootmgr
+# it show OS in my pc & current priority to boot 1st
+```
+
+else, boot to installation usb/cd
+
+```
+sudo su
+mount /dev/nvme0n1p5 /mnt
+mount /dev/nvme0n1p1 /mnt/boot/efi
+mount --bind /dev /mnt/dev
+mount --bind /sys /mnt/sys
+mount --bind /proc /mnt/proc
+mount --bind /run /mnt/run
+chroot /mnt
+mv /etc/kernel/postrm.d/zz-update-grub /etc/kernel/zz-update-grub.bad
+apt purge grub grub-pc grub-common grub-efi
+mv /boot/grub /boot/grub_backup
+mkdir /boot/grub
+apt install grub grub-pc grub-common grub-efi
+grub-install /dev/nvme0n1p5
+udpate-grub
+```
+
+# (OLD) Python3 on Python2 default with PyENV
+
+Installing Virtualenv (Pyenv) with Python 3.5 on Ubuntu
+Linux already comes with python 2.7 installed, and in this tutorial we will update it to version 3.5.0, it is easy you just need to follow this steps:
+
+Check python version on Terminal ( Ctrl + Alt + T open terminal)
+`python -V`
+
+Installing the pyenv
+```
+curl -L https://raw.githubusercontent.com/yyuu/pyenv-installer/master/bin/pyenv-installer | bash
+```
+Install dependencies before pyenv
+```
+sudo apt-get update && sudo apt-get upgrade
+sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev git
+```
+Add to ~/.bashrc at the end of file
+```
+export PATH="~/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+```
+Test with the command(you may need to restart terminal):
+```
+pyenv versions
+* 3.5.0 (set by /home/{user}/.pyenv/version)
+```
+
+Install python on pyenv
+`pyenv install 3.5.0`
+Set Python 3.5 as global pyenv
+`pyenv global 3.5.0`
+Check if version 3.5.0 is selected with the command
+`pyenv versions`
+Test the python version with:
+`python -V`
+Congratulations you have Python 3.5.0 configured on your machine!
+
+[install python3 on python2 default system](https://mrdjangoblog.wordpress.com/2016/08/18/installing-pyenv-python-3-5/)
+
+## Windows 10 / 11 Reset Password dg DLC Boot
+
+1. boot vpc menggunakan dlc boot
+2. pilih `other tools` 
+3. pilih `active password changer pro 6.0`
+4. klik `enter` untuk melanjutkan
+5. pilih `1` untuk memilih partisi system windows
+6. pilih `1` untuk memilih disk c
+7. tunggu proses pencarian file selesai. klik `enter`
+8. pilih user yg ingin dihapus passwordnya, misal `1` (administrators)
+9. ketik `Y` utk mereset password, ceklis `clear this user password`
+
+[https://www.senimantkj.com/2019/07/cara-mereset-password-windows-dengan.html?m=1](https://www.senimantkj.com/2019/07/cara-mereset-password-windows-dengan.html?m=1)
+
+
 ## not openned
 
 - [testing node menggunakan mocha & chai - buildwithangga](https://buildwithangga.com/tips/testing-node-menggunakan-mocha-dan-chai)
