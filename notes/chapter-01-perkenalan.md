@@ -299,6 +299,56 @@ Congratulations you have Python 3.5.0 configured on your machine!
 
 [https://www.senimantkj.com/2019/07/cara-mereset-password-windows-dengan.html?m=1](https://www.senimantkj.com/2019/07/cara-mereset-password-windows-dengan.html?m=1)
 
+## Ubuntu / Linux Mint : X11VNC
+
+[https://www.makeuseof.com/install-ubuntu-vnc-server-linux/](https://www.makeuseof.com/install-ubuntu-vnc-server-linux/)
+
+- setup lightdm as default login screen
+
+```
+sudo apt update           # update repository
+sudo apt install lightdm  # install display manager
+sudo reboot
+```
+
+- install x11vnc server
+
+```
+sudo apt install x11vnc
+sudo vim /lib/systemd/system/x11vnc.service
+```
+
+```
+[Unit]
+Description=x11vnc service
+After=dispaly-manager.service network.target syslog.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/x11vnc -forever -display :0 -auth guess -passwd SomeRandomPassword
+ExecStop=/usr/bin/killall x11vnc
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
+```
+
+- Reload Daemon Service
+
+```
+sudo systemctl daemon-reload
+sudo systemctl enable x11vnc.service
+sudo systemctl start x11vnc.service
+sudo systemctl status x11vnc.service
+```
+
+- Enable Port in Firewall
+
+```
+sudo ufw allow 5900/tcp
+```
+
+
 
 ## not openned
 
@@ -323,6 +373,31 @@ Congratulations you have Python 3.5.0 configured on your machine!
 - [glitch home page](https://glitch.com/)
 - [mikrotik - implementasi proxy-arp](https://citraweb.com/artikel_lihat.php?id=267)
 - [mikrotik - mengamankan jaringan dg arp](https://citraweb.com/artikel_lihat.php?id=56)
+- [netlify victor-hugo -static-site-generator-](https://www.netlify.com/blog/2016/09/21/a-step-by-step-guide-victor-hugo-on-netlify/)
+- [netlify hugo github deploy](https://www.netlify.com/blog/2016/09/29/a-step-by-step-guide-deploying-on-netlify/)
+- [serverless hosting function as a service](https://www.mskog.com/posts/self-hosting-serverless-with-openfaas/)
+- [serverless framework opensource](https://www.cncf.io/blog/2020/04/13/serverless-open-source-frameworks-openfaas-knative-more/)
+- [kubeless.io -archived- vmware](https://github.com/vmware-archive/kubeless)
+- [selfhosted faas](https://medium.com/@horatiujeflea/self-hosted-faas-9ae1d76f23d3)
+- [openfaas github repo](https://github.com/openfaas/faas)
+- [prometheus tutorial - external snmp server](https://sbcode.net/prometheus/snmp-second/)
+- [prometheus tutorial - snmp cisco](https://sbcode.net/prometheus/snmp-cisco-switch/)
+- [prometheus tutorial - snmp exporter config generator](https://sbcode.net/prometheus/snmp-exporter-generator/)
+- [prometheus snmp exporter github repo](https://github.com/prometheus/snmp_exporter)
+- [openfaas vs faasd, kubernetes-cluster vs single-host, github repo](https://github.com/openfaas/faasd)
+- [openfaasd](https://openfaas.gumroad.com/l/serverless-for-everyone-else)
+- [faasd - lightweight serverless on raspberry pi](https://blog.alexellis.io/faasd-for-lightweight-serverless/)
+- [fly.io cheap vps](https://fly.io/docs/about/pricing/)
+- [inlets dev to prod tunnel via vps](https://inlets.dev/blog/2021/08/08/private-tunnel.html)
+- [openfaas - cli as function](https://blog.alexellis.io/cli-functions-with-openfaas/)
+- [faasd install with multipass](https://github.com/openfaas/faasd/blob/master/docs/MULTIPASS.md)
+- [faasd deploy with cloud-init](https://blog.alexellis.io/deploy-serverless-faasd-with-cloud-init/)
+- [build containers without docker](https://blog.alexellis.io/building-containers-without-docker/)
+- [k3c rancher - single binnary containerd, docker alternative, github repo](https://github.com/rancher/k3c)
+- [**deploy** self serverless service](https://www.exoscale.com/syslog/self-hosted-serverless/)
+- [restful API codeigniter 4](https://mfikri.com/artikel/restful-api-codeigniter4)
+- [remote access to docker with docker context via ssh](https://qmacro.org/2021/06/12/remote-access-to-docker-on-my-synology-nas/)
+
 
 
 ----
