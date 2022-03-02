@@ -348,6 +348,78 @@ sudo systemctl status x11vnc.service
 sudo ufw allow 5900/tcp
 ```
 
+## OpenSSL Synology-nas-02
+
+```
+root@SUNEO-01:/var/packages/Docker/etc/cert#  openssl genrsa 4096 > ca-key.pem
+Generating RSA private key, 4096 bit long modulus
+....................................................................................................++++
+...++++
+e is 65537 (0x10001)
+root@SUNEO-01:/var/packages/Docker/etc/cert#  ls
+ca-key.pem
+root@SUNEO-01:/var/packages/Docker/etc/cert#  ls -la
+total 12
+drwxr-xr-x 2 root root 4096 Mar  1 13:55 .
+drwxr-xr-x 3 root root 4096 Mar  1 13:34 ..
+-rw-r--r-- 1 root root 3243 Mar  1 13:55 ca-key.pem
+root@SUNEO-01:/var/packages/Docker/etc/cert#  openssl req -new -x509 -nodes -days 3650 -key ca-key.pem -out ca-cert.pem
+You are about to be asked to enter information that will be incorporated
+into your certificate request.
+What you are about to enter is what is called a Distinguished Name or a DN.
+There are quite a few fields but you can leave some blank
+For some fields there will be a default value,
+If you enter '.', the field will be left blank.
+-----
+Country Name (2 letter code) [TW]:ID
+State or Province Name (full name) [Taiwan]:Jawa Barat
+Locality Name (eg, city) [Taipei]:Purwakarta
+Organization Name (eg, company) [Synology Inc.]:PT Kinenta Indonesia
+Organizational Unit Name (eg, section) []:IT-DEPT
+Common Name (e.g. server FQDN or YOUR name) []:synology-nas-02
+Email Address [product@synology.com]:itdept@banshu-ind.com
+root@SUNEO-01:/var/packages/Docker/etc/cert#  openssl req -newkey rsa:4096 -nodes -days 3650 -keyout server-key.pem -out server-req.pem 
+Generating a RSA private key
+............................................................................................................................................................................................++++
+....................++++
+writing new private key to 'server-key.pem'
+-----
+You are about to be asked to enter information that will be incorporated
+into your certificate request.
+What you are about to enter is what is called a Distinguished Name or a DN.
+There are quite a few fields but you can leave some blank
+For some fields there will be a default value,
+If you enter '.', the field will be left blank.
+-----
+Country Name (2 letter code) [TW]:ID
+State or Province Name (full name) [Taiwan]:Jawa Barat
+Locality Name (eg, city) [Taipei]:Purwakarta
+Organization Name (eg, company) [Synology Inc.]:PT Kinenta Indonesia
+Organizational Unit Name (eg, section) []:IT-DEPT
+Common Name (e.g. server FQDN or YOUR name) []:synology-nas-02
+Email Address [product@synology.com]:itdept@banshu-ind.com
+
+Please enter the following 'extra' attributes
+to be sent with your certificate request
+A challenge password []:
+An optional company name []:
+root@SUNEO-01:/var/packages/Docker/etc/cert#  openssl x509 -req -days 3650 -set_serial 01 -in server-req.pem -out server-cert.pem -CA ca-cert.pem -CAkey ca-key.pem 
+Signature ok
+subject=/C=ID/ST=Jawa Barat/L=Purwakarta/O=PT Kinenta Indonesia/OU=IT-DEPT/CN=synology-nas-02/emailAddress=itdept@banshu-ind.com
+Getting CA Private Key
+root@SUNEO-01:/var/packages/Docker/etc/cert#  ls
+ca-cert.pem  ca-key.pem  server-cert.pem  server-key.pem  server-req.pem
+root@SUNEO-01:/var/packages/Docker/etc/cert#  ls -la
+total 28
+drwxr-xr-x 2 root root 4096 Mar  1 13:59 .
+drwxr-xr-x 3 root root 4096 Mar  1 13:34 ..
+-rw-r--r-- 1 root root 2191 Mar  1 13:56 ca-cert.pem
+-rw-r--r-- 1 root root 3243 Mar  1 13:55 ca-key.pem
+-rw-r--r-- 1 root root 2061 Mar  1 13:59 server-cert.pem
+-rw-r--r-- 1 root root 3272 Mar  1 13:58 server-key.pem
+-rw-r--r-- 1 root root 1785 Mar  1 13:58 server-req.pem
+root@SUNEO-01:/var/packages/Docker/etc/cert# 
+```
 
 
 ## not openned
