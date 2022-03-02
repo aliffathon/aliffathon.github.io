@@ -421,6 +421,23 @@ drwxr-xr-x 3 root root 4096 Mar  1 13:34 ..
 root@SUNEO-01:/var/packages/Docker/etc/cert# 
 ```
 
+## AMLogic S905x3 X96 Max Plus
+
+- [https://androidmtk.com/download-amlogic-usb-burning-tool](https://androidmtk.com/download-amlogic-usb-burning-tool)
+- [https://xdafirmware.com/x96-max-plus](https://xdafirmware.com/x96-max-plus)
+- [https://www.mediafire.com/file/c2ipwie449m6jig/X96Max_Plus2_20200901-1005.img/file](https://www.mediafire.com/file/c2ipwie449m6jig/X96Max_Plus2_20200901-1005.img/file)
+- [https://www.getdroidtips.com/download-amlogic-burn-card-maker/](https://www.getdroidtips.com/download-amlogic-burn-card-maker/)
+- [https://ugoos.com/firmware-upgrade-guide-for-amlogic-devices](https://ugoos.com/firmware-upgrade-guide-for-amlogic-devices)
+- [https://forum.armbian.com/topic/12162-single-armbian-image-for-rk-aml-aw-aarch64-armv8/](https://forum.armbian.com/topic/12162-single-armbian-image-for-rk-aml-aw-aarch64-armv8/)
+- [https://disk.yandex.ru/d/_rQgn_FosYuW0g/20.10/20201014](https://disk.yandex.ru/d/_rQgn_FosYuW0g/20.10/20201014)
+- [https://users.armbian.com/balbes150/](https://users.armbian.com/balbes150/)
+- [https://disk.yandex.ru/d/PIGjwjZ4m4HKqg](https://disk.yandex.ru/d/PIGjwjZ4m4HKqg)
+- [https://www.mediafire.com/file/nv6e0x3vt6p6qkr/Pulpstone_Android_v3.1_rev1_B860H.7z/file](https://www.mediafire.com/file/nv6e0x3vt6p6qkr/Pulpstone_Android_v3.1_rev1_B860H.7z/file)
+- [https://docs.google.com/uc?export=download&id=1dPN3MIdEu4aCAc88-17IgoUocQ5X80Ci](https://docs.google.com/uc?export=download&id=1dPN3MIdEu4aCAc88-17IgoUocQ5X80Ci)
+- [https://www.mediafire.com/file/2zcft21kfelqqmd/Firmware_Xbox_onex_games_V_2.1.rar/file](https://www.mediafire.com/file/2zcft21kfelqqmd/Firmware_Xbox_onex_games_V_2.1.rar/file)
+- [https://mega.nz/file/n51ggRpK#58tzApx9yOszsh2GIu0ewvmyIQGH6qlBAuvLkWQPN4w](https://mega.nz/file/n51ggRpK#58tzApx9yOszsh2GIu0ewvmyIQGH6qlBAuvLkWQPN4w)
+- [https://disk.yandex.com/d/SLWV8RnEV0Hzkg?fbclid=IwAR1MixfPv2Gyi71tr4Ids-JNKFzVWnWLzPrQ5P88QTXEK8Ck1aAjez1SFwg](https://disk.yandex.com/d/SLWV8RnEV0Hzkg?fbclid=IwAR1MixfPv2Gyi71tr4Ids-JNKFzVWnWLzPrQ5P88QTXEK8Ck1aAjez1SFwg)
+
 
 ## not openned
 
