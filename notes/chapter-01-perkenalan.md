@@ -421,6 +421,75 @@ drwxr-xr-x 3 root root 4096 Mar  1 13:34 ..
 root@SUNEO-01:/var/packages/Docker/etc/cert# 
 ```
 
+## important notes
+
+- [grafana cheatsheet](https://blog.ruanbekker.com/cheatsheets/grafana/)
+- [prometheus cheatsheet](https://promlabs.com/promql-cheat-sheet/)
+- [prometheus exporter - web config.yml - ssl](https://github.com/prometheus/exporter-toolkit/blob/master/docs/web-configuration.md)
+- [prometheus - snmp exporter - pfSense](https://brendonmatheson.com/2021/02/07/step-by-step-guide-to-connecting-prometheus-to-pfsense-via-snmp.html)
+- [windows 10 - nginx php mysql - binary zip manually - non xampp](https://codefaq.org/server/how-to-install-nginx-php-mysql-on-windows-10/)
+- [nodejs expressjs mongodb - restful api](https://mfikri.com/artikel/restful-api-express-mongodb)
+- [restful api - codeigniter4 - json web token](https://www.twilio.com/blog/create-secured-restful-api-codeigniter-php)
+- [amlogic x96 air s905x3 4gb - manjaro armlinux](https://sepatufans.wordpress.com/2021/02/14/manjaro-arm-xfce-linux-pada-android-tv-box-x96air-x96max-amlogic-s905x3/)
+
+
+## other notes
+
+```
+/usr/local/bin/dockerd -H fd:// -H tcp://0.0.0.0:2375 --containerd=/var/run/containerd/containerd.sock --config-file /var/docker/etc/docker.json
+ /usr/local/bin/dockerd --config-file=/var/docker/etc/docker.json --pidfile=/var/run/docker/docker.pid -H unix:///var/run/docker/docker.sock -H tcp://0.0.0.0:2375
+
+ /usr/local/bin/dockerd --config-file=/var/docker/etc/docker.json --bridge=loop --metrics-addr=0.0.0.0:9121
+ /usr/local/bin/snmp_exporter --config.file=/usr/local/bin/snmp.yml --web.listen-address=":9117"
+```
+
+- [synology nas - docker - macvlan upstart script](https://community.synology.com/enu/forum/1/post/133969?reply=460399)
+- [synology nas - arm node js binary](https://www.ibm.com/docs/en/z-chatops/1.1.0?topic=software-installing-nodejs)
+- [nodejs download site](https://nodejs.org/en/download/)
+- [mikhmonv3 - lib routeros_api php](https://github.com/laksa19/mikhmonv3/blob/master/lib/routeros_api.class.php)
+- [prometheus - windows exporter](https://github.com/prometheus-community/windows_exporter)
+- [prometheus - apache exporter](https://computingforgeeks.com/how-to-monitor-apache-web-server-with-prometheus-and-grafana-in-5-minutes/)
+- [docker static image binary](https://download.docker.com/linux/static/stable/x86_64/)
+- [influxdb - flux query](https://medium.com/schkn/sql-is-dead-hail-to-flux-8e8498756049)
+- [tsdb time-series database](https://medium.com/@febriandwiputra/mengenal-tsdb-time-series-database-2ec7488efc36)
+- [gitlab runner self hosted docker](https://docs.gitlab.com/runner/register/index.html#docker)
+- [gitlab runner docker](https://docs.gitlab.com/runner/install/docker.html)
+- [nvr dvr hikvision online cctv](https://www.tembolok.id/tutorial-cara-akses-dan-setting-dvr-cctv-secara-lokal-dan-remote/)
+- [mikrotik forward smtp port 587](https://ptipd.iainambon.ac.id/tips/view/setting-mail-server-mikrotik)
+- [php phpmailer send email gmail](https://netcorecloud.com/tutorials/send-an-email-via-gmail-smtp-server-using-php/)
+- [balenaOS - production ready os for docker](https://www.balena.io/os/)
+- [balena engine - docker engine alternative](https://www.balena.io/blog/announcing-balena-a-moby-based-container-engine-for-iot/)
+- [balena engine - github release download](https://github.com/balena-os/balena-engine/releases/tag/v18.9.13)
+- [balena engine - dockerfile](https://www.balena.io/docs/learn/develop/dockerfile/)
+- [netbox community github](https://github.com/netbox-community/netbox)
+- [cloudflare tunnel router kubernetes](https://www.marcolancini.it/2021/blog-kubernetes-lab-cloudflare-tunnel/)
+- [cloudflare tunnel access ssh](https://danishshakeel.me/creating-an-ssh-tunnel-using-cloudflare-argo-and-access/)
+- [docker portainer connect to docker remote host with ssl](https://lemariva.com/blog/2019/12/portainer-managing-docker-engine-remotely)
+- [php codeigniter4 restful api server](https://github.com/chriskacerguis/codeigniter-restserver)
+- [virtualbox download url](http://download.virtualbox.org/virtualbox/debian/)
+- [virtualbox 5.1 on headless ubuntu server](https://www.howtoforge.com/tutorial/running-virtual-machines-with-virtualbox-5.1-on-a-headless-ubuntu-16.04-lts-server/)
+- [virtualbox - remotebox remote virtualbox](https://www.unixmen.com/remotebox-graphical-client-manage-virtualbox-vms-remotely/)
+- [virtualbox headless ubuntu - phpVirtualbox](https://ostechnix.com/install-oracle-virtualbox-ubuntu-16-04-headless-server/)
+- [cloudinit - cloud config](https://github.com/number5/cloud-init/blob/main/doc/examples/cloud-config.txt)
+- [github - php oop project](https://github.com/youns3510/php_oop_crud_project)
+- [erwin github web landing page](https://erwinaris.github.io/)
+- [docker install](https://docs.docker.com/engine/install/ubuntu/)
+- [gitea linux service - systemd supervisor](https://docs.gitea.io/en-us/linux-service/)
+- [openstack - horizon dashboard - create vm](https://www.itzgeek.com/how-tos/linux/centos-how-tos/how-to-launch-an-openstack-instance-using-horizon-dashboard.html)
+- [ubuntu cloud - from scratch - debootstrap](https://mvallim.github.io/cloud-image-ubuntu-from-scratch/)
+- [kata container](https://github.com/yusufalafid/Kata-Container-OSF-Metup)
+- [ubuntu openstack - devstack](https://www.routecloud.net/blog/install-openstack-di-ubuntu-14-04-dengan-devstack/)
+- [google hiba - host identity based authentication](https://github.com/google/hiba)
+- [openstack - ubuntu 16 on virtualbox](https://www.bogotobogo.com/DevOps/OpenStack-Install-On-Ubuntu-16-Server.php)
+- [openstack - cli linux](https://computingforgeeks.com/install-and-configure-openstack-client-on-linux/)
+- [cloudinit - build linux system](https://timmydouglas.com/2019/12/29/cloud-init.html)
+- [minimalcicd - github kubernetes](https://github.com/theJaxon/Minimal-CICD)
+- [postgresql - multi master replication](https://hevodata.com/learn/postgresql-multi-master-replication/)
+- [php restful api mysql](https://belajaraplikasi.com/membuat-rest-api-dengan-php-dan-mysql/)
+- [php mysql oop crud](https://www.nicesnippets.com/blog/php-mysql-oop-crud-example-tutorial)
+- [mikrotik - dhcpv6 server](https://wiki.mikrotik.com/wiki/Setting_up_DHCPv6)
+- [mikrotik - dhcp server client ipv6](https://citraweb.com/artikel_lihat.php?id=214)
+
 ## AMLogic S905x3 X96 Max Plus
 
 - [https://androidmtk.com/download-amlogic-usb-burning-tool](https://androidmtk.com/download-amlogic-usb-burning-tool)
@@ -437,7 +506,9 @@ root@SUNEO-01:/var/packages/Docker/etc/cert#
 - [https://www.mediafire.com/file/2zcft21kfelqqmd/Firmware_Xbox_onex_games_V_2.1.rar/file](https://www.mediafire.com/file/2zcft21kfelqqmd/Firmware_Xbox_onex_games_V_2.1.rar/file)
 - [https://mega.nz/file/n51ggRpK#58tzApx9yOszsh2GIu0ewvmyIQGH6qlBAuvLkWQPN4w](https://mega.nz/file/n51ggRpK#58tzApx9yOszsh2GIu0ewvmyIQGH6qlBAuvLkWQPN4w)
 - [https://disk.yandex.com/d/SLWV8RnEV0Hzkg?fbclid=IwAR1MixfPv2Gyi71tr4Ids-JNKFzVWnWLzPrQ5P88QTXEK8Ck1aAjez1SFwg](https://disk.yandex.com/d/SLWV8RnEV0Hzkg?fbclid=IwAR1MixfPv2Gyi71tr4Ids-JNKFzVWnWLzPrQ5P88QTXEK8Ck1aAjez1SFwg)
-
+ 
+- [https://www.tecmint.com/create-network-bridge-in-ubuntu/#nmcli](https://www.tecmint.com/create-network-bridge-in-ubuntu/#nmcli)
+- [https://docs.docker.com/config/daemon/](https://docs.docker.com/config/daemon/)
 
 ## not openned
 
