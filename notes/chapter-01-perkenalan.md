@@ -433,17 +433,51 @@ root@SUNEO-01:/var/packages/Docker/etc/cert#
 - [amlogic x96 air s905x3 4gb - manjaro armlinux](https://sepatufans.wordpress.com/2021/02/14/manjaro-arm-xfce-linux-pada-android-tv-box-x96air-x96max-amlogic-s905x3/)
 - [code-server: systemd, docker, nginx reverse proxy](https://chanwkim01.medium.com/how-to-set-up-code-server-daemon-on-ubuntu-root-access-docker-systemd-nginx-reverse-proxy-and-a72fa80e02e9)
 - [excel: spreadsheet vlookup hlookup](https://umardanny.com/penjelasan-mengenai-fungsi-vlookup-dan-hlookup-disertai-gambar/)
+- [openvpn: port-share 443 with web server https](https://www.vpntutorials.com/tutorials/openvpn-sharing-a-port-with-a-webserver-on-port-80-443/)
+- [docker: web-based filebrowser](https://github.com/filebrowser/filebrowser)
+- [docker: linuxserver/docker-code-server, originally github/cdr/code-server](https://github.com/linuxserver/docker-code-server)
+- [docker nginx proxy manager initial setup, letsencrypt * ssl, 502 error](https://www.thesmarthomebook.com/2021/08/25/nginx-proxy-manager-setup-and-a-fix-for-your-502-gateway-errors/)
+- [docker: github nginx proxy manager](https://github.com/NginxProxyManager/nginx-proxy-manager)
+- [github vscode on server (browser) coder/code-server](https://github.com/coder/code-server/)
+- [panutan: ansible custom dynamic inventories](https://www.jeffgeerling.com/blog/creating-custom-dynamic-inventories-ansible)
+- [rizkimufrizal: codeigniter restful API](https://rizkimufrizal.github.io/belajar-membuat-rest-api-dengan-codeigniter/)
+- [santrikoding: codeigniter restful API + vuejs](https://santrikoding.com/restful-api-codeigniter-4)
 
 ## other notes
 
-```
-/usr/local/bin/dockerd -H fd:// -H tcp://0.0.0.0:2375 --containerd=/var/run/containerd/containerd.sock --config-file /var/docker/etc/docker.json
- /usr/local/bin/dockerd --config-file=/var/docker/etc/docker.json --pidfile=/var/run/docker/docker.pid -H unix:///var/run/docker/docker.sock -H tcp://0.0.0.0:2375
-
- /usr/local/bin/dockerd --config-file=/var/docker/etc/docker.json --bridge=loop --metrics-addr=0.0.0.0:9121
- /usr/local/bin/snmp_exporter --config.file=/usr/local/bin/snmp.yml --web.listen-address=":9117"
-```
-
+- [proxmox: network configuration](https://pve.proxmox.com/wiki/Network_Configuration)
+- [github den-it ntmap: network topology visualize, netbox](https://github.com/den-it/ntmap)
+- [windows 10 + cups over network](https://techblog.paalijarvi.fi/2020/05/25/making-windows-10-to-print-to-a-cups-printer-over-the-network/)
+- [medium netshoot](https://medium.com/netshoot)
+- [i putu hariyadi https://iputuhariyadi.net/](https://github.com/iputuhariyadi/codeigniter-mikrotik-api)
+- [lukmanlab ansible mikrotik](https://www.lukmanlab.com/tutorial-ansible-routeros-mikrotik/)
+- [ansible routeros module community collection mikrotik](https://github.com/ansible-collections/community.routeros)
+- [rancher k3s docker https://github.com/rancher/install-docker](https://rancher.com/docs/k3s/latest/en/advanced/)
+- [github rancher](https://github.com/rancher/rancher)
+- [ubuntu kubernetes k3s](https://computingforgeeks.com/install-kubernetes-on-ubuntu-using-k3s/)
+- [virsh virt-manager via ssh](https://www.google.com/amp/s/blog.desdelinux.net/en/virt-manager-virsh-remote-administration-via-ssh-SME-networks/amp/)
+- [debian: KVM install](https://www.server-world.info/en/note?os=Debian_10&p=kvm&f=1)
+- [mikrotik: LB ECMP](https://citraweb.com/artikel_lihat.php?id=76)
+- [docker: linuxserver/heimdall github](https://github.com/linuxserver/heimdall)
+- [OTP, mikrotik, basic firewall](https://rickfreyconsulting.com/rfc-mikrotik-firewall-6-1-for-ipv4-free-version/)
+- [OTP, mikrotik, firewall](https://wiki.mikrotik.com/wiki/Basic_universal_firewall_script)
+- [OTP, ansible dasar](https://www.google.com/amp/s/hosteko.com/blog/cara-menulis-membuat-dan-menjalankan-ansible-playbooks/amp)
+- [mikrotik: l2tp+ipsec](https://citraweb.com/artikel_lihat.php?id=152)
+- [mikrotik: openvpn site-to-site](https://citraweb.com/artikel_lihat.php?id=145)
+- [mikrotik: openvpn + mobile](https://citraweb.com/artikel_lihat.php?id=354)
+- [obsidian.md](https://obsidian.md/)
+- [proxmox ve: passthrough physical disk to VM](https://pve.proxmox.com/wiki/Passthrough_Physical_Disk_to_Virtual_Machine_(VM))
+- [cctv dvr nvr hikvision](https://www.tembolok.id/tutorial-cara-akses-dan-setting-dvr-cctv-secara-lokal-dan-remote/)
+- [hugo static pages: theme ezhil](https://github.com/vividvilla/ezhil)
+- [docker: github pages/jekyll livereload support](https://svrooij.io/2020/12/31/github-pages-live-reload/)
+- [postgresql: pgadmin create role](https://chartio.com/learn/postgresql/create-a-user-with-pgadmin/)
+- [docker: node-red + influxdb + grafana](https://qbee.io/docs/docker-nodered-influx-grafana.html)
+- [synology nas + docker: install pihole](https://mariushosting.com/how-to-install-pi-hole-on-your-synology-nas/)
+- [synology nas + docker: install rancher](https://mariushosting.com/how-to-install-rancher-on-your-synology-nas/)
+- [heimdall dashboard on ubuntu 20.04](https://www.google.com/amp/s/varhowto.com/install-heimdall-dashboard-ubuntu-20-04/%3famp)
+- [heimdall dashboard on ubuntu 20.04. with docker](https://varhowto.com/install-heimdall-dashboard-docker-ubuntu-20-04/?amp)
+- [openvpn: behind apache reverse proxy: apache tcp mode/tcp connect proxy](https://openvpn-users.narkive.com/f2Qchar4/openvpn-trough-apache-reverse-proxy)
+- [docker network macvlan & ipvlan](https://docs.docker.com/network/ipvlan/)
 - [synology nas - docker - macvlan upstart script](https://community.synology.com/enu/forum/1/post/133969?reply=460399)
 - [synology nas - arm node js binary](https://www.ibm.com/docs/en/z-chatops/1.1.0?topic=software-installing-nodejs)
 - [nodejs download site](https://nodejs.org/en/download/)
@@ -528,6 +562,39 @@ root@SUNEO-01:/var/packages/Docker/etc/cert#
 - [docker alpine, haproxy image container](https://github.com/haproxytech/haproxy-docker-alpine)
 - [reveal.js: html presentation w js](https://revealjs.com/#/30)
 - [docker: filebrowser/filebrowser, web-based file browser](https://github.com/filebrowser/filebrowser)
+
+```
+/usr/local/bin/dockerd -H fd:// -H tcp://0.0.0.0:2375 --containerd=/var/run/containerd/containerd.sock --config-file /var/docker/etc/docker.json
+ /usr/local/bin/dockerd --config-file=/var/docker/etc/docker.json --pidfile=/var/run/docker/docker.pid -H unix:///var/run/docker/docker.sock -H tcp://0.0.0.0:2375
+
+ /usr/local/bin/dockerd --config-file=/var/docker/etc/docker.json --bridge=loop --metrics-addr=0.0.0.0:9121
+ /usr/local/bin/snmp_exporter --config.file=/usr/local/bin/snmp.yml --web.listen-address=":9117"
+```
+
+```
+# powershell, enable net-framework-2.0&3.5 on windows 10/11
+powershell.exe
+dism.exe /online /enable-feature /featurename:NetFX3 /all /source:d:\sources\sxs /limitaccess
+
+# [create local account windows 10/11](https://www.google.com/amp/s/pureinfotech.com/create-local-account-windows-10/amp/)
+cmd.exe / powershell.exe as administrator
+net user USERNAME PASSWORD /ADD
+net localgroup GROUPNAME USERNAME /ADD
+
+net user IT-DEPT pass /add
+net localgroup administrators it-dept /add
+net localgroup administrators user1 /delete
+net localgroup users user1 /add
+net user Administrator /active:yes
+net user Administrator /active:no
+net user user1 /delete
+
+New-LocalUser "username" -Password "password" -FullName "IT-DEPT" -Description "Administrator IT"
+Add-LocalGroup -Group "Administrators" -Member "it-dept"
+Remove-LocalGroup -Group "Administrators" -Member "user1"
+Remove-LocalUser -Name "user1"
+
+```
 
 ## AMLogic S905x3 X96 Max Plus
 
